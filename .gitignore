@@ -1,0 +1,22 @@
+# Environments
+.env
+.envrc
+.venv
+
+# Visual Studio Code
+# .vscode/settings.json IS committed, and holds only portable settings. Keep
+# machine-specific values (interpreter paths, local directories) in your
+# VS Code User settings, not here.
+
+# Claude Code
+# Shared and portable -> committed:  CLAUDE.md, .claude/settings.json,
+#                                    .claude/rules/, .claude/skills/, .claude/agents/
+# Machine-specific    -> ignored:    everything below.
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Working notes, plans, and decision records. Deliberately NOT committed:
+# this repo is public and .status/ holds half-formed thinking. The consequence
+# is that it lives on one machine only and is absent from fresh clones and
+# from `claude --worktree` worktrees.
+.status/

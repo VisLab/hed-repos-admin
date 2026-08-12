@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(mdformat *)",
+      "Bash(python -m mdformat *)",
+      "Bash(git status)",
+      "Bash(git status *)",
+      "Bash(git log)",
+      "Bash(git log *)",
+      "Bash(git diff)",
+      "Bash(git diff *)",
+      "Bash(git show *)",
+      "Bash(git branch)",
+      "Bash(git branch *)",
+      "Bash(git remote -v)",
+      "Bash(git ls-files *)",
+      "Bash(grep *)",
+      "Bash(rg *)",
+      "Bash(find *)",
+      "Bash(wc *)",
+      "Bash(diff *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(cat *)",
+      "Bash(ls)",
+      "Bash(ls *)",
+      "Bash(file *)",
+      "Bash(echo *)",
+      "Bash(pwd)",
+      "Bash(which *)"
+    ],
+    "ask": [
+      "Bash(git checkout HEAD -- *)",
+      "Bash(git checkout -- *)",
+      "Bash(git restore *)",
+      "Bash(git stash *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(.envrc)",
+      "Read(.status/archive/**)",
+      "Bash(rm -rf *)",
+      "Bash(rm -fr *)",
+      "Bash(rm -r *)",
+      "Bash(git push)",
+      "Bash(git push *)",
+      "Bash(git reset --hard *)",
+      "Bash(git rebase *)",
+      "Bash(git clean -fd*)",
+      "Bash(git filter-branch *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(chmod *)",
+      "Bash(chown *)"
+    ]
+  }
+}
