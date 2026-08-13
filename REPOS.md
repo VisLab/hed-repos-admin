@@ -25,7 +25,7 @@ All of these repositories are interdependent in that one repository depends on i
 | data | `hed-examples` | Curated example BIDS datasets and use cases |
 | data | `hed-tests` | Test data (review) |
 | docs | `hed-resources` | User-facing documentation and resources |
-| docs | `hed-tasks` | Documentation about tasks (review: the local checkout tracks `hed-standard/hed-task`, singular - confirm the repo name; distinct from the local-only task-research working area) |
+| docs | `hed-task` | Documentation about tasks; distinct from the local-only task-research working area |
 | servers | `hed-server` | Deployable HED services server (review) |
 | servers | `hed-web` | The online HED tools web interface (review) |
 
