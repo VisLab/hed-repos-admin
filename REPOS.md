@@ -25,6 +25,7 @@ All of these repositories are interdependent in that one repository depends on i
 | data | `hed-examples` | Curated example BIDS datasets and use cases |
 | data | `hed-tests` | Test data (review) |
 | docs | `hed-resources` | User-facing documentation and resources |
+| docs | `hed-tasks` | Documentation about tasks (review: the local checkout tracks `hed-standard/hed-task`, singular - confirm the repo name; distinct from the local-only task-research working area) |
 | servers | `hed-server` | Deployable HED services server (review) |
 | servers | `hed-web` | The online HED tools web interface (review) |
 
@@ -47,12 +48,6 @@ Updated by direct push; no PR workflow.
 | `hed-metadata-toolkit` | Metadata tooling; the finished reference example of the standardized repo layout | (review) | VisLab |
 | `nemar-metadata` | NEMAR dataset metadata: curated summary files (review) | `hed-metadata-toolkit` | local only; has a VisLab remote but is not pushed |
 | task-research | Task-research working material | (review) | local only; no remote, never pushed |
-
-### Placement pending (review)
-
-| Repo | Purpose | Note |
-| --- | --- | --- |
-| `hed-task` | (review: purpose, and whether it is distinct from task-research) | |
 
 ## Not yet placed
 
