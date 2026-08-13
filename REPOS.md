@@ -19,15 +19,15 @@ All of these repositories are interdependent in that one repository depends on i
 | tools | `table-remodeler` | Restructuring and remodeling of tabular event files (review) |
 | tools | `hed-matlab` | HED tools for MATLAB |
 | tools | `hed-vis` | Visualization library for HED-annotated data (`hedvis` on PyPI): word clouds and visual summaries; will hold the task-model generator code |
-| tools | `hed-mcp` | MCP server exposing HED tools to AI assistants (review) |
+| tools | `hed-mcp` | MCP server exposing HED tools to AI assistants |
 | spec | `hed-specification` | The formal HED specification and annotation rules |
 | vocabulary | `hed-schemas` | The HED vocabularies: schema source of truth |
 | data | `hed-examples` | Curated example BIDS datasets and use cases |
-| data | `hed-tests` | Test data (review) |
+| data | `hed-tests` | Test data for hed validators |
 | docs | `hed-resources` | User-facing documentation and resources |
 | docs | `hed-task` | Documentation about tasks; distinct from the local-only task-research working area |
-| servers | `hed-server` | Deployable HED services server (review) |
-| servers | `hed-web` | The online HED tools web interface (review) |
+| servers | `hed-server` | Deployable HED server with UI and REST |
+| servers | `hed-web` | The browser-based HED tools |
 
 ## Research repositories (VisLab)
 
@@ -45,7 +45,7 @@ Updated by direct push; no PR workflow.
 | Repo | Purpose | Depends on | Hosting |
 | --- | --- | --- | --- |
 | `hed-task-models` | Graph models of tasks: the model spec (`model_rules.md`) and worked examples; data, no code | `hed-vis` for code, `hed-examples` for source datasets | VisLab |
-| `hed-metadata-toolkit` | Metadata tooling; the finished reference example of the standardized repo layout | (review) | VisLab |
-| `nemar-metadata` | NEMAR dataset metadata: curated summary files (review) | `hed-metadata-toolkit` | local only; has a VisLab remote but is not pushed |
-| task-research | Task-research working material | (review) | local only; no remote, never pushed |
+| `hed-metadata-toolkit` | Metadata tooling; the finished reference example of the standardized repo layout |  | VisLab |
+| `nemar-metadata` | NEMAR dataset metadata: curated summary files  | `hed-metadata-toolkit` | local only; has a VisLab remote but is not pushed |
+| `task-research` | Task-research working material |  | local only; no remote, never pushed |
 
