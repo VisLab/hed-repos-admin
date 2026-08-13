@@ -18,6 +18,7 @@ All of these repositories are interdependent in that one repository depends on i
 | tools | `hed-typescript` | HED tools in TypeScript (review) |
 | tools | `table-remodeler` | Restructuring and remodeling of tabular event files (review) |
 | tools | `hed-matlab` | HED tools for MATLAB |
+| tools | `hed-vis` | Visualization library for HED-annotated data (`hedvis` on PyPI): word clouds and visual summaries; will hold the task-model generator code |
 | tools | `hed-mcp` | MCP server exposing HED tools to AI assistants (review) |
 | spec | `hed-specification` | The formal HED specification and annotation rules |
 | vocabulary | `hed-schemas` | The HED vocabularies: schema source of truth |
@@ -42,7 +43,6 @@ Updated by direct push; no PR workflow.
 
 | Repo | Purpose | Depends on | Hosting |
 | --- | --- | --- | --- |
-| `hed-vis` | Visualization library for HED-annotated data (`hedvis` on PyPI): word clouds and visual summaries; will hold the task-model generator code | `hed-python` (`hedtools`) | VisLab |
 | `hed-task-models` | Graph models of tasks: the model spec (`model_rules.md`) and worked examples; data, no code | `hed-vis` for code, `hed-examples` for source datasets | VisLab |
 | `hed-metadata-toolkit` | Metadata tooling; the finished reference example of the standardized repo layout | (review) | VisLab |
 | `nemar-metadata` | NEMAR dataset metadata: curated summary files (review) | `hed-metadata-toolkit` | local only; has a VisLab remote but is not pushed |
