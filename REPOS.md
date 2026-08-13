@@ -49,8 +49,3 @@ Updated by direct push; no PR workflow.
 | `nemar-metadata` | NEMAR dataset metadata: curated summary files (review) | `hed-metadata-toolkit` | local only; has a VisLab remote but is not pushed |
 | task-research | Task-research working material | (review) | local only; no remote, never pushed |
 
-## Not yet placed
-
-Local checkouts not yet classified; place or strike as each is standardized: `ctagger`, `hed-agents`, `hed-bot`, `hed-curation`, `hed-data`, `hed-ontology`, `hed-schema-browser`, `hed-standard.github.io`. Upstream checkouts that are not part of this map: `bids-examples`, `bids-specification`, `bids-validator`.
-
-Abandoned, do not revive: `openneuro-metadata` (its design docs were rescued into `hed-metadata-toolkit`).
