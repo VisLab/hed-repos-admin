@@ -20,6 +20,7 @@ All of these repositories are interdependent in that one repository depends on i
 | tools | `hed-matlab` | HED tools for MATLAB |
 | tools | `hed-vis` | Visualization library for HED-annotated data (`hedvis` on PyPI): word clouds and visual summaries; will hold the task-model generator code |
 | tools | `hed-mcp` | MCP server exposing HED tools to AI assistants |
+| tools | `ndx-hed` | NWB extension that adds HED annotations to any NWB `DynamicTable` (`ndx-hed` on PyPI) |
 | spec | `hed-specification` | The formal HED specification and annotation rules |
 | vocabulary | `hed-schemas` | The HED vocabularies: schema source of truth |
 | data | `hed-examples` | Curated example BIDS datasets and use cases |
