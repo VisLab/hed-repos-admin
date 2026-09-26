@@ -50,3 +50,9 @@ Updated by direct push; no PR workflow.
 | `nemar-metadata` | NEMAR dataset metadata: curated summary files  | `hed-metadata-toolkit` | local only; has a VisLab remote but is not pushed |
 | `task-research` | Task-research working material |  | local only; no remote, never pushed |
 
+### EEG preprocessing
+
+| Repo | Purpose | Depends on | Hosting |
+| --- | --- | --- | --- |
+| `EEG-Clean-Tools` | The PREP pipeline: standardized early-stage EEG preprocessing (line-noise removal, robust referencing, bad-channel detection and interpolation, reporting) as a MATLAB toolbox and EEGLAB plugin | EEGLAB (external) | VisLab |
+
