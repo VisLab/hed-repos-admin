@@ -21,14 +21,14 @@
       "Bash(git restore *)",
       "Bash(git stash *)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(rm -r *)",
+      "Bash(rm -rf *)",
+      "Bash(rm -fr *)"
     ],
     "deny": [
       "Read(.env)",
       "Read(.envrc)",
-      "Bash(rm -rf *)",
-      "Bash(rm -fr *)",
-      "Bash(rm -r *)",
       "Bash(git push)",
       "Bash(git push *)",
       "Bash(git reset --hard *)",

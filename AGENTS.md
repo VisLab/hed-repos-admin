@@ -21,7 +21,13 @@ This repository belongs to no repo cluster and grants no standing access to any 
 
 ## Commands
 
-Test framework: none. There is no code here, and there are no build, test, or lint commands. If that ever changes, this section changes in the same commit that changes it.
+Test framework: none. There is no code here, and there are no build or test commands. If that ever changes, this section changes in the same commit that changes it.
+
+The one tool is the markdown formatter: `mdformat`, pinned with its plugins in the `dev` group of `pyproject.toml` (setup commands at the top of that file) and installed in `.venv`; settings in `.mdformat.toml`. Run it through the venv interpreter, since it is not on PATH. Check before finishing (drop `--check` to fix):
+
+```bash
+.venv/Scripts/python -m mdformat --check *.md      # .venv/bin/python off Windows
+```
 
 ## Layout
 
@@ -51,7 +57,7 @@ Test framework: none. There is no code here, and there are no build, test, or li
 - `.status/README.md` - current state, unfinished work, and an ordered `Next` list. Read this first.
 - `.status/development_history.md` - what has shipped, newest first, with pointers to the records. History only; append at the top when a PR merges.
 - `.status/decisions.md` - why things are the way they are. Read before proposing structural changes. Append entries; never rewrite one.
-- `.status/plans/*.md` - unfinished plans only. Check the `Status:` header and the `[ ]` / `[x]` markers before starting work. A finished plan moves to `.status/archive/completed_plans/`, renamed `archived_YYYY-MM-DD_<name>` with the day it was archived; split any still-open boxes into a new plan first.
+- `.status/plans/*.md` - unfinished plans only, named `YYYY-MM-DD_<slug>.md` with the day each was opened. Check the `Status:` header and the `[ ]` / `[x]` markers before starting work. A finished plan moves to `.status/archive/completed_plans/`, name unchanged; split any still-open boxes into a new plan first.
 - `.status/notes/` - dated records, always named `YYYY-MM-DD_<slug>.md`. Write-once.
 - `.status/local-environment.md` - this machine's paths, interpreter, and quirks. Tool-agnostic. Never copy its contents into a committed file.
 - IMPORTANT: do not read `.status/archive/` unless a file is named for you. The `.status/` root holds only `README.md`, `decisions.md`, `development_history.md`, and `local-environment.md`; nothing else is created there.
@@ -59,8 +65,8 @@ Test framework: none. There is no code here, and there are no build, test, or li
 ## Working agreements
 
 - **IMPORTANT: every file written to `.status/` opens with a `For humans:` summary.** Three or four sentences, at the very top, before any other heading: what this file is, and the one or two things a person needs to take away from it. Write it plainly - no throat-clearing, no restating the title. The same applies to a long answer in a session: lead with the conclusion.
-- IMPORTANT: never delete or rewrite a file under `.status/` without asking first. Appending is fine.
-- IMPORTANT: temporary scripts, experiments, and one-off files go in `.status/scratch/` - never the repository root. Anything in `scratch/` may be deleted unread.
+- IMPORTANT: ask before deleting, moving, or renaming anything under `.status/`. `README.md`, `plans/`, and `prompts/` are living documents: edit them freely, including whole-file rewrites, without asking (copy `README.md` to `scratch/` before rewriting it wholesale). Notes are write-once; `decisions.md` and `development_history.md` are append-only.
+- IMPORTANT: temporary scripts, experiments, and one-off files go in `.status/scratch/` - never the repository root. `scratch/` is cleaned when Kay asks; when she does, delete the files yourself.
 - Show evidence, not assertions: the command you ran and its actual output.
 - For a change spanning more than three files, write a plan to `.status/plans/` and stop for review before editing.
 - Do not commit, push, or create branches unless asked.

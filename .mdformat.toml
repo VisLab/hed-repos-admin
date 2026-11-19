@@ -1,0 +1,10 @@
+# mdformat settings for this repo. They live here rather than as command-line
+# flags so a local run and the next one cannot disagree because someone
+# forgot one. The tool itself is pinned in pyproject.toml.
+
+# wrap = "no" is the convention across the HED repositories: paragraphs are
+# single lines, so a one-word edit is a one-line diff. Changing this setting
+# reflows every markdown file in one diff, so do that alone.
+wrap = "no"
+number = true
+end_of_line = "lf"
