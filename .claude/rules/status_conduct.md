@@ -35,6 +35,7 @@ paths:
   `.status/scratch/` - never the repository root. `scratch/` may hold any file
   type; everywhere else is markdown only. Non-markdown that is not kept goes to
   `scratch/`, never `archive/`.
-- `scratch/` is cleaned only when Kay asks, obvious junk only, never by age.
-  When she asks, or approves a list, delete the files yourself; never hand the
-  deletion back to her.
+- `scratch/` is cleaned only when the developer asks for a cleanup - obvious junk
+  only, never by age. List the files that will be deleted (path, size, and why
+  each is junk) and ask whether it is okay to delete them. Once the developer
+  says yes, delete exactly those files yourself; never hand the deletion back.

@@ -2,7 +2,7 @@
 
 One row per repository. Two groups, distinguished by where the main source lives and how updates flow:
 
-1. **General-purpose HED repositories** - main source in the GitHub `hed-standard` organization, used by the HED community. Updated by pull request from a branch in another repository (for Kay, a fork under `VisLab`) - never by direct push.
+1. **General-purpose HED repositories** - main source in the GitHub `hed-standard` organization, used by the HED community. Updated by pull request from a branch in another repository (for example, a fork under `VisLab`) - never by direct push.
 2. **Research repositories** - ongoing research, not community deliverables. Hosted under `VisLab` and updated by pushing directly to the repo, no PR; some are local only and not pushed at all (see the Hosting column).
 
 Rows marked "(review)" are inferred, not confirmed. Repositories are referred to by name, never by path.

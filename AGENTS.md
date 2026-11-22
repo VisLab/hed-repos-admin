@@ -66,7 +66,7 @@ The one tool is the markdown formatter: `mdformat`, pinned with its plugins in t
 
 - **IMPORTANT: every file written to `.status/` opens with a `For humans:` summary.** Three or four sentences, at the very top, before any other heading: what this file is, and the one or two things a person needs to take away from it. Write it plainly - no throat-clearing, no restating the title. The same applies to a long answer in a session: lead with the conclusion.
 - IMPORTANT: ask before deleting, moving, or renaming anything under `.status/`. `README.md`, `plans/`, and `prompts/` are living documents: edit them freely, including whole-file rewrites, without asking (copy `README.md` to `scratch/` before rewriting it wholesale). Notes are write-once; `decisions.md` and `development_history.md` are append-only.
-- IMPORTANT: temporary scripts, experiments, and one-off files go in `.status/scratch/` - never the repository root. `scratch/` is cleaned when Kay asks; when she does, delete the files yourself.
+- IMPORTANT: temporary scripts, experiments, and one-off files go in `.status/scratch/` - never the repository root. `scratch/` is cleaned only when the developer asks for a cleanup: list the files that will be deleted and ask whether it is okay to delete them, then delete exactly those files yourself.
 - Show evidence, not assertions: the command you ran and its actual output.
 - For a change spanning more than three files, write a plan to `.status/plans/` and stop for review before editing.
 - Do not commit, push, or create branches unless asked.
